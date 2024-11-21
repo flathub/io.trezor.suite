@@ -67,6 +67,26 @@
 
   
 <releases>
+  <release version="24.11.2" date="2024-11-21">
+  <url type="details">https://trezor.io/learn/a/trezor-suite-update-november-2024</url>
+    <description>
+        <p><em>New features</em></p>
+      <ul>
+        <li>Opt in to auto-updates to automatically download and install the latest updates, with a one-click restart to apply.</li>
+        <li>BNB Smart Chain is now supported.</li>
+      </ul>
+        <p><em>Improvements</em></p>
+      <ul>
+        <li>Buy/Sell and Swap are now accessible directly from the main dashboard for quicker access.</li>
+        <li>Removed BIP-69 sorting to shuffle inputs and reduce fingerprinting, enhancing privacy.</li>
+      </ul>
+        <p><em>Bug fixes</em></p>
+      <ul>  
+        <li>Minor fixes, usability enhancements, and performance improvements.</li>
+        <li>Fixed a bug in the Send form that prevented spending unconfirmed transactions.</li>
+      </ul>
+    </description>
+  </release>
   <release version="24.10.1" date="2024-10-16">
   <url type="details">https://trezor.io/learn/a/trezor-suite-update-october-2024</url>
     <description>
