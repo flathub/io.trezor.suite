@@ -67,21 +67,36 @@
 
   
 <releases>
-  <release version="24.11.3" date="2024-11-25">
-  <url type="details">https://trezor.io/learn/a/trezor-suite-update-november-2024</url>
+  <release version="24.12.3" date="2024-12-19">
+    <url type="details">https://trezor.io/learn/a/trezor-suite-update-december-2024</url>
     <description>
-        <p><em>New features</em></p>
+      <p><em>Improvements</em></p>
+      <ul>
+        <li>Transactions now use nVersion=2, reducing fingerprinting for enhanced privacy.</li>
+        <li>Improved token selection for more control when sending.</li>
+        <li>Optimized main menu resizing for seamless navigation across all screen sizes.</li>
+      </ul>
+      <p><em>Bug fixes</em></p>
+      <ul>
+        <li>Resolved minor bugs, enhanced usability, and optimized performance.</li>
+      </ul>
+    </description>
+  </release>
+  <release version="24.11.3" date="2024-11-25">
+    <url type="details">https://trezor.io/learn/a/trezor-suite-update-november-2024</url>
+    <description>
+      <p><em>New features</em></p>
       <ul>
         <li>Opt in to auto-updates to automatically download and install the latest updates, with a one-click restart to apply.</li>
         <li>BNB Smart Chain is now supported.</li>
       </ul>
-        <p><em>Improvements</em></p>
+      <p><em>Improvements</em></p>
       <ul>
         <li>Buy/Sell and Swap are now accessible directly from the main dashboard for quicker access.</li>
         <li>Removed BIP-69 sorting to shuffle inputs and reduce fingerprinting, enhancing privacy.</li>
       </ul>
-        <p><em>Bug fixes</em></p>
-      <ul>  
+      <p><em>Bug fixes</em></p>
+      <ul>
         <li>Minor fixes, usability enhancements, and performance improvements.</li>
         <li>Fixed a bug in the Send form that prevented spending unconfirmed transactions.</li>
         <li>Fixed a device detection bug that occurred in certain scenarios.</li>
@@ -89,29 +104,29 @@
     </description>
   </release>
   <release version="24.11.2" date="2024-11-21">
-  <url type="details">https://trezor.io/learn/a/trezor-suite-update-november-2024</url>
+    <url type="details">https://trezor.io/learn/a/trezor-suite-update-november-2024</url>
     <description>
-        <p><em>New features</em></p>
+      <p><em>New features</em></p>
       <ul>
         <li>Opt in to auto-updates to automatically download and install the latest updates, with a one-click restart to apply.</li>
         <li>BNB Smart Chain is now supported.</li>
       </ul>
-        <p><em>Improvements</em></p>
+      <p><em>Improvements</em></p>
       <ul>
         <li>Buy/Sell and Swap are now accessible directly from the main dashboard for quicker access.</li>
         <li>Removed BIP-69 sorting to shuffle inputs and reduce fingerprinting, enhancing privacy.</li>
       </ul>
-        <p><em>Bug fixes</em></p>
-      <ul>  
+      <p><em>Bug fixes</em></p>
+      <ul>
         <li>Minor fixes, usability enhancements, and performance improvements.</li>
         <li>Fixed a bug in the Send form that prevented spending unconfirmed transactions.</li>
       </ul>
     </description>
   </release>
   <release version="24.10.1" date="2024-10-16">
-  <url type="details">https://trezor.io/learn/a/trezor-suite-update-october-2024</url>
+    <url type="details">https://trezor.io/learn/a/trezor-suite-update-october-2024</url>
     <description>
-        <p><em>Improvements</em></p>
+      <p><em>Improvements</em></p>
       <ul>
         <li>MATIC has been fully migrated to POL (Polygon network update).</li>
         <li>Device and Suite update status has been added to the bottom navigation.</li>
@@ -121,8 +136,8 @@
         <li>The 'Trade' button has been replaced with clearer 'Buy and Sell' and 'Swap' options.</li>
         <li>Simplified Chinese has been added as a community language — thank you, contributors!</li>
       </ul>
-        <p><em>Bug fixes</em></p>
-      <ul>  
+      <p><em>Bug fixes</em></p>
+      <ul>
         <li>Various small improvements and bug fixes.</li>
       </ul>
     </description>
