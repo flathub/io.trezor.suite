@@ -67,6 +67,28 @@
 
   
 <releases>
+  <release version="25.1.2" date="2025-01-22">
+    <url type="details">https://trezor.io/learn/a/trezor-suite-update-january-2025</url>
+    <description>
+      <p><em>New features</em></p>
+      <ul>
+        <li>Solana Token-2022 now supported.</li>
+        <li>Added support for Base, Optimism, and Arbitrum One networks, which can be accessed via Experimental features.</li>
+        <li>Introduced an NFT section for EVM-based chains, which can be enabled via Experimental features.</li>
+        <li>Enabled delegation of voting rights when staking Cardano.</li>
+      </ul>
+      <p><em>Improvements</em></p>
+      <ul>
+        <li>Added the option to check or create a wallet backup during firmware updates.</li>
+        <li>Introduced a warning when sending funds to a contract address on the Ethereum network.</li>
+      </ul>
+      <p><em>Bug fixes</em></p>
+      <ul>
+        <li>Fixed labeling for Polygon and BNB Smart Chain networks.</li>
+        <li>Resolved minor bugs, enhanced usability, and optimized performance.</li>
+      </ul>
+    </description>
+  </release>
   <release version="24.12.3" date="2024-12-19">
     <url type="details">https://trezor.io/learn/a/trezor-suite-update-december-2024</url>
     <description>
