@@ -67,6 +67,26 @@
 
   
 <releases>
+<release version="25.4.2" date="2025-04-16">
+  <url type="details">https://trezor.io/learn/a/trezor-suite-update-april-2025</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>EVM priority fees are now available on all EVM chains except BSC. This allows users to speed up transactions by adding a "tip" (priority fee) to incentivize validators.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>The updated color palette enhances brand alignment and improves contrast for better visual clarity.</li>
+      <li>The app now opens significantly faster in View-only mode, allowing users to navigate immediately while content continues loading in the background.</li>
+      <li>Users can now filter out suspicious transactions on networks that support detection, improving security and transparency.</li>
+      <li>The DCA page has been enhanced with updated visuals and content, along with an option to display the withdrawal address for easy and quick scanning into the Invity App.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Fixed minor bugs, improved usability, and optimized performance for a smoother experience.</li>
+    </ul>
+  </description>
+</release>
 <release version="25.3.3" date="2025-03-27">
   <url type="details">https://trezor.io/learn/a/trezor-suite-update-march-2025</url>
   <description>
