@@ -67,6 +67,27 @@
 
   
 <releases>
+<release version="25.5.2" date="2025-05-21">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-may-2025</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Users can now set a custom blockchain explorer in place of the default Blockbook, offering more flexibility and personalization.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>Bitcoin fee rate calculation has been enhanced for greater accuracy.</li>
+      <li>The "Bump fee" action has been renamed to "Speed up" for improved clarity and consistency.</li>
+      <li>Solana staking UX has been refined with updated epoch-related copy (3 days → 2 days) to reflect accurate timing.</li>
+      <li>The onboarding flow for Bitcoin-only firmware has been simplified by removing the coins page, streamlining the setup experience.</li>
+      <li>Various small UI improvements have been made, including a fix for dust calculation, contributing to overall polish and reliability.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Fixed minor bugs, improved usability, and optimized performance for a smoother experience.</li>
+    </ul>
+  </description>
+</release>
 <release version="25.4.2" date="2025-04-16">
   <url type="details">https://trezor.io/learn/a/trezor-suite-update-april-2025</url>
   <description>
