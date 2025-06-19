@@ -67,6 +67,26 @@
 
   
 <releases>
+<release version="25.6.2" date="2025-06-18">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-june-2025</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Added support for Stellar (XLM) network, which can be accessed via Experimental features.</li>
+      <li>WalletConnect integration is now available via Experimental features, allowing you to connect Suite to popular dApps.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>Fonts for addresses and public keys in Suite now match those on Trezor devices to reduce visual discrepancies.</li>
+      <li>The transactions export menu has been improved with clarified filters and support for .csv, .pdf, and .json formats.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Fixed minor bugs, improved usability, and optimized performance for a smoother experience.</li>
+      <li>Fixed an issue with reinstalling firmware version 2.8.10.</li>
+    </ul>
+  </description>
+</release>
 <release version="25.5.2" date="2025-05-21">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-may-2025</url>
   <description>
