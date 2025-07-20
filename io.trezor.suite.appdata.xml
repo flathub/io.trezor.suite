@@ -67,6 +67,31 @@
 
   
 <releases>
+<release version="25.7.4" date="2025-07-18">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-july-2025</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Stellar (XLM) support is now available to all users, moving from experimental to fully integrated and accessible via the Coins menu.</li>
+      <li>Solana address validation has been introduced, warning users when sending to system-derived token or staking addresses for added clarity and security.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>The passphrase wallet flow has been refined with clearer guidance when opening existing wallets or creating new ones, improving user confidence and understanding.</li>
+      <li>Account discovery speed has been boosted by up to 50%, offering a noticeably faster and more responsive experience.</li>
+      <li>Transaction history navigation has been improved with smoother pagination, making it easier to browse past transactions.</li>
+      <li>The trading interface has been polished with updated modal headers and a restructured swap flow that moves DEX approvals to the start for better usability.</li>
+      <li>Fee rate updates now occur every minute, ensuring more accurate estimates when sending transactions.</li>
+      <li>WalletConnect transaction previews are now shown before confirmation, adding transparency to EVM-based transactions.</li>
+      <li>EIP-712 messages and 1inch Fusion swap details have been made easier to read, enhancing clarity during the signing process.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Minor bugs have been resolved, along with general usability enhancements for a more reliable and seamless experience.</li>
+      <li>Fixed an issue where a passphrase prompt appeared during token swaps.</li>
+    </ul>
+  </description>
+</release>
 <release version="25.6.3" date="2025-06-23">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-june-2025</url>
   <description>
