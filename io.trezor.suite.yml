@@ -30,22 +30,22 @@ modules:
     sources:
       - type: extra-data
         only-arches: [x86_64]
-        url: https://data.trezor.io/suite/releases/desktop/v25.7.4/Trezor-Suite-25.7.4-linux-x86_64.AppImage
-        size: 183714469
-        sha256: 21892d46fbf74e4d59b35e4e536d0d5fe69ef96fa4c3686117652c72eacbecd5
+        url: https://data.trezor.io/suite/releases/desktop/v25.8.2/Trezor-Suite-25.8.2-linux-x86_64.AppImage
+        size: 188667119
+        sha256: 75cd06bfb7cf63b0ebc8e2ea9db470bc0a224c8dea7ae5834d010228947fb0a9
         filename: Trezor-Suite.AppImage
 
       - type: extra-data
         only-arches: [aarch64]
-        url: https://data.trezor.io/suite/releases/desktop/v25.7.4/Trezor-Suite-25.7.4-linux-arm64.AppImage
-        size: 183285382
-        sha256: 3761e88a59cf8ddbeffc45c2fc7df22c81a4b28f9dd267fd7a168c7c1b29dd42
+        url: https://data.trezor.io/suite/releases/desktop/v25.8.2/Trezor-Suite-25.8.2-linux-arm64.AppImage
+        size: 188314629
+        sha256: b57244269540e8a769030cc46c0b7ad672e3e356358eefb470be65de8eb47852
         filename: Trezor-Suite.AppImage
 
       - type: script
         dest-filename: trezor-suite
         commands:
-          - exec zypak-wrapper /app/extra/bin/trezor-suite "$@" --skip-new-bridge-rollout
+          - exec zypak-wrapper /app/extra/bin/trezor-suite "$@"
 
       - type: file
         path: io.trezor.suite.appdata.xml

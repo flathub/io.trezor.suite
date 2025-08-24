@@ -67,6 +67,28 @@
 
   
 <releases>
+<release version="25.8.2" date="2025-08-20">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-august-2025</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Bitcoin can now be set as the primary currency unit, offering greater control over how values are displayed.</li>
+      <li>“View-only” wallets are now enabled by default, making it easier to monitor balances without connecting your device.</li>
+      <li>Biometric authentication with auto-lock has been added to experimental features, enhancing both security and convenience.</li>
+      <li>WalletConnect is now officially supported—securely connect your Trezor to dApps, with transaction simulations included for added transparency.</li>
+      <li>Trezor Connect has graduated from experimental—seamlessly link your Trezor to supported apps via a secure Trezor Suite interface (availability depends on third-party wallet support).</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>The minimum Bitcoin fee rate has been reduced to 0.1 sat/vB, allowing for more cost-effective transaction options.</li>
+      <li>Locktime functionality has been enhanced for increased precision in transaction timing.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Minor bugs have been resolved, along with general usability enhancements for a more reliable and seamless experience.</li>
+    </ul>
+  </description>
+</release>
 <release version="25.7.4" date="2025-07-18">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-july-2025</url>
   <description>
