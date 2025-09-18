@@ -67,6 +67,30 @@
 
   
 <releases>
+<release version="25.9.2" date="2025-09-17">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-september-2025</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Biometric authentication is now supported—unlock Trezor Suite with Touch ID, Face ID, or Windows Hello for quick access and stronger protection.</li>
+      <li>MEV protection is active by default on Ethereum, Base, and BNB Smart Chain, and can be changed in Settings.</li>
+      <li>A new dashboard overview displays all staked assets in one place for clearer portfolio management.</li>
+      <li>Users can now claim the Cardano Midnight airdrop directly through Trezor Suite.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>The approve/revoke flow for EVM token allowances has been redesigned for improved clarity and stronger security.</li>
+      <li>The welcome screen has been refreshed with a more consistent and polished design.</li>
+      <li>The flow for adding EVM accounts has been fixed—users can now add a new account even if the previous one is empty.</li>
+      <li>Send options have been streamlined—Locktime and Broadcast settings are now grouped under Advanced Send for better organization.</li>
+      <li>Graph messaging has been refined to provide clearer context and usability.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Minor bugs have been resolved, along with general usability enhancements for a more reliable and seamless experience.</li>
+    </ul>
+  </description>
+</release>
 <release version="25.8.2" date="2025-08-20">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-august-2025</url>
   <description>
