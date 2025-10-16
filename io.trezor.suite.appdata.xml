@@ -67,6 +67,27 @@
 
   
 <releases>
+  <release version="25.10.1" date="2025-10-15">
+    <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-october-2025</url>
+    <description>
+      <p><em>New features</em></p>
+      <ul>
+        <li>Kryptonim on-ramp integration allows users to purchase crypto directly within the app for a smoother and more streamlined buying experience.</li>
+      </ul>
+      <p><em>Improvements</em></p>
+      <ul>
+        <li>The installation and upgrade process is now clearer and more guided.</li>
+        <li>Fee estimation for trades is now more reliable, with fewer instances of fallback values being used.</li>
+        <li>The trading workflow has been optimized by moving the account picker to the first step for a more intuitive flow.</li>
+        <li>Adding new EVM accounts now works as expected, even if the previous account is empty.</li>
+      </ul>
+      <p><em>Bug fixes</em></p>
+      <ul>
+        <li>The “High” fee rate now enforces a minimum of 2 sat/vB, and “Economy” rates are calculated from the latest 6 blocks for greater accuracy.</li>
+        <li>Minor bugs have been fixed, and general usability has been improved for a more stable and seamless experience.</li>
+      </ul>
+    </description>
+  </release>
 <release version="25.9.3" date="2025-09-19">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-september-2025</url>
   <description>
