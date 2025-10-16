@@ -1,3 +1,4 @@
 repo/*
 .flatpak-builder/*
 builddir/*
+update-version.sh
