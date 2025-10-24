@@ -67,6 +67,19 @@
 
   
 <releases>
+<release version="25.10.2" date="2025-10-21">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-october-2025</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Trezor Suite welcomes our newest family member — Trezor Safe 7.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Minor bugs have been fixed, and general usability has been improved for a more stable and seamless experience.</li>
+    </ul>
+  </description>
+</release>
   <release version="25.10.1" date="2025-10-15">
     <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-october-2025</url>
     <description>
