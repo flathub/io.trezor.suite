@@ -15,6 +15,7 @@ finish-args:
   - --filesystem=xdg-desktop
   - --filesystem=xdg-documents
   - --filesystem=xdg-download
+  - --system-talk-name=org.bluez
 modules:
   - name: unappimage
     buildsystem: simple
