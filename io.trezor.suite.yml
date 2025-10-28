@@ -16,6 +16,7 @@ finish-args:
   - --filesystem=xdg-documents
   - --filesystem=xdg-download
   - --system-talk-name=org.bluez
+  - --talk-name=org.freedesktop.Flatpak
 modules:
   - name: unappimage
     buildsystem: simple
