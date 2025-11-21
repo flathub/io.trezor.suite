@@ -67,6 +67,31 @@
 
   
 <releases>
+<release version="25.11.1" date="2025-11-19">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-november-2025</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Passphrase protection is now disabled by default during onboarding and can be activated at any time in the passphrase settings for greater user control.</li>
+      <li>A new Tropic chip authenticity check has been introduced, providing an additional layer of device verification.</li>
+      <li>Full-text search is now supported across all screens, making it easier to locate information quickly.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>A redesigned swap details screen now offers clearer insight into each transaction. For on-chain swaps, users will see expanded information on slippage, minimum amounts received, and MEV protection.</li>
+      <li>A new Cardano staking pool has been integrated, accompanied by UI and UX updates that align Cardano staking with the Ethereum and Solana staking experience.</li>
+      <li>The device onboarding flow has been refined for improved clarity and ease of use.</li>
+      <li>Passphrase wallet visibility has been optimized—when passphrase protection is disabled, Passphrase wallets are no longer shown in the wallet switcher, reducing interface clutter.</li>
+      <li>The Welcome Screen has been redesigned for a cleaner, more modern introduction to the application.</li>
+      <li>Button styling has been updated for better visual consistency and usability.</li>
+      <li>Sidebar auto-collapsing has been added, improving navigation efficiency in narrower layouts.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Minor issues have been resolved, and overall usability has been enhanced to deliver a more stable and consistent experience.</li>
+    </ul>
+  </description>
+</release>
 <release version="25.10.2" date="2025-10-21">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-october-2025</url>
   <description>
