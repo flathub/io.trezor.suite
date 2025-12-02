@@ -6,7 +6,7 @@
   <summary>Take control of your crypto in Trezor Suite</summary>
 
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>LicenseRef-proprietary=https://github.com/trezor/trezor-suite/blob/develop/LICENSE.md</project_license>
+  <project_license>LicenseRef-T-RSL</project_license>
   <developer_name>Trezor</developer_name>
   <categories>
     <category>Office</category>
