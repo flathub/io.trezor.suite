@@ -14,7 +14,6 @@
   </categories>
 
   <description>
-  <p><em>NOTE:</em> This is the official release of Trezor Suite, packaged into a Flatpak by the community. This repackaging is not yet supported by Trezor Company s.r.o</p>
   <p>Trezor Suite is a comprehensive app for securely managing cryptocurrency with your Trezor device. It allows you to send, receive, and track digital assets. Key features include explicit transaction confirmation on your Trezor hardware wallet, passphrase wallets for enhanced privacy, coin control, staking rewards, and support for a wide range of coins and tokens. It also integrates security features like Tor for private browsing and Taproot for enhanced Bitcoin privacy.</p>
   <p>For the Trezor device to be detected, you need to have systemd 256.4 or newer, or install udev rules on your system from the Trezor website.</p>
   </description>
@@ -67,6 +66,19 @@
 
   
 <releases>
+<release version="25.11.3" date="2025-12-01">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-december-2025</url>
+  <description>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Fixed an issue with passphrase discovery</li>
+      <li>Fixed changing the on-device homescreen</li>
+      <li>Fixed the AutoForget functionality</li>
+      <li>Implemented Cardano optimizations and fixes</li>
+      <li>Minor issues have been resolved, and overall usability has been enhanced to deliver a more stable and consistent experience</li>
+    </ul>
+  </description>
+</release>
 <release version="25.11.1" date="2025-11-19">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-november-2025</url>
   <description>
