@@ -67,6 +67,19 @@
 
   
 <releases>
+<release version="25.11.3" date="2025-12-01">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-december-2025</url>
+  <description>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Fixed an issue with passphrase discovery</li>
+      <li>Fixed changing the on-device homescreen</li>
+      <li>Fixed the AutoForget functionality</li>
+      <li>Implemented Cardano optimizations and fixes</li>
+      <li>Minor issues have been resolved, and overall usability has been enhanced to deliver a more stable and consistent experience</li>
+    </ul>
+  </description>
+</release>
 <release version="25.11.1" date="2025-11-19">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-november-2025</url>
   <description>
