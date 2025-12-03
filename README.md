@@ -1,9 +1,7 @@
 
 # Flatpak-trezor-suite
 Trezor Suite as a Flatpak app.
-
-
-Unofficial community made [Flathub package](https://flathub.org/apps/details/io.trezor.suite) of [Trezor Suite](https://suite.trezor.io/).
+[Flathub package](https://flathub.org/apps/details/io.trezor.suite) of [Trezor Suite](https://suite.trezor.io/).
 
 ## Install
 
