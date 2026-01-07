@@ -3,7 +3,7 @@
   <id>io.trezor.suite</id>
 
   <name>Trezor Suite</name>
-  <summary>Take control of your crypto in Trezor Suite</summary>
+  <summary>The app made for your Trezor</summary>
 
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-T-RSL</project_license>
@@ -14,7 +14,7 @@
   </categories>
 
   <description>
-  <p>Trezor Suite is a comprehensive app for securely managing cryptocurrency with your Trezor device. It allows you to send, receive, and track digital assets. Key features include explicit transaction confirmation on your Trezor hardware wallet, passphrase wallets for enhanced privacy, coin control, staking rewards, and support for a wide range of coins and tokens. It also integrates security features like Tor for private browsing and Taproot for enhanced Bitcoin privacy.</p>
+  <p>Trezor Suite is a comprehensive app for securely managing cryptocurrency with your Trezor device. It allows you to send, receive, swap and track digital assets. Key features include explicit transaction confirmation on your Trezor hardware wallet, passphrase wallets for enhanced privacy, coin control, staking rewards, and support for a wide range of coins and tokens. It also integrates security features like Tor for enhanced privacy and Taproot for enhanced Bitcoin functionality.</p>
   <p>For the Trezor device to be detected, you need to have systemd 256.4 or newer, or install udev rules on your system from the Trezor website.</p>
   </description>
 
@@ -24,40 +24,62 @@
   <url type="vcs-browser">https://github.com/trezor/trezor-suite</url>
 
   <launchable type="desktop-id">io.trezor.suite.desktop</launchable>
+
+  <branding>
+    <color type="primary" scheme_preference="light">#072C17</color>
+    <color type="primary" scheme_preference="dark">#B8F4D1</color>
+  </branding>
   
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/Ondra-Zik-SL/Flatpak-trezor-suite/94122eea1b17bafd8a647a2fbafa896250f3a3ae/screenshots/1.png</image>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/e4525d384fc3f950cb8482954bb614c46377a799/screenshots/light/01-dashboard-l.png</image>
+      <caption>Track your total portfolio balance at a glance</caption>
     </screenshot>
 
     <screenshot>
-      <image>https://raw.githubusercontent.com/Ondra-Zik-SL/Flatpak-trezor-suite/94122eea1b17bafd8a647a2fbafa896250f3a3ae/screenshots/2.png</image>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/e4525d384fc3f950cb8482954bb614c46377a799/screenshots/light/02-dashboard-btc-l.png</image>
+      <caption>See a detailed transaction history and manage individual crypto accounts</caption>
     </screenshot>
 
     <screenshot>
-      <image>https://raw.githubusercontent.com/Ondra-Zik-SL/Flatpak-trezor-suite/94122eea1b17bafd8a647a2fbafa896250f3a3ae/screenshots/3.png</image>
-    </screenshot>    
-
-    <screenshot>
-      <image>https://raw.githubusercontent.com/Ondra-Zik-SL/Flatpak-trezor-suite/94122eea1b17bafd8a647a2fbafa896250f3a3ae/screenshots/4.png</image>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/e4525d384fc3f950cb8482954bb614c46377a799/screenshots/light/03-receive-l.png</image>
+      <caption>Securely generate and verify fresh addresses for receiving funds</caption>
     </screenshot>
 
     <screenshot>
-      <image>https://raw.githubusercontent.com/Ondra-Zik-SL/Flatpak-trezor-suite/94122eea1b17bafd8a647a2fbafa896250f3a3ae/screenshots/5.png</image>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/e4525d384fc3f950cb8482954bb614c46377a799/screenshots/light/04-send-l.png</image>
+      <caption>Send payments easily with custom fee levels and advanced options</caption>
     </screenshot>
 
     <screenshot>
-      <image>https://raw.githubusercontent.com/Ondra-Zik-SL/Flatpak-trezor-suite/94122eea1b17bafd8a647a2fbafa896250f3a3ae/screenshots/6.png</image>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/e4525d384fc3f950cb8482954bb614c46377a799/screenshots/light/05-swap-loading-l.png</image>
+      <caption>Search for the best trade offers from multiple exchange partners</caption>
     </screenshot>
 
     <screenshot>
-      <image>https://raw.githubusercontent.com/Ondra-Zik-SL/Flatpak-trezor-suite/94122eea1b17bafd8a647a2fbafa896250f3a3ae/screenshots/7.png</image>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/e4525d384fc3f950cb8482954bb614c46377a799/screenshots/light/05-swap-ready-l.png</image>
+      <caption>Swap cryptocurrencies instantly by selecting the best available rate</caption>
     </screenshot>
 
     <screenshot>
-      <image>https://raw.githubusercontent.com/Ondra-Zik-SL/Flatpak-trezor-suite/94122eea1b17bafd8a647a2fbafa896250f3a3ae/screenshots/8.png</image>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/e4525d384fc3f950cb8482954bb614c46377a799/screenshots/light/06-settings-l.png</image>
+      <caption>Manage active coins and other settings</caption>
     </screenshot>
-    
+
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/e4525d384fc3f950cb8482954bb614c46377a799/screenshots/light/07-passphrase-l.png</image>
+      <caption>Access hidden wallets and add an extra layer of security with passphrases</caption>
+    </screenshot>
+
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/e4525d384fc3f950cb8482954bb614c46377a799/screenshots/light/08-firmware-l.png</image>
+      <caption>Keep your hardware wallet up to date with secure firmware installation</caption>
+    </screenshot>
+
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.trezor.suite/refs/heads/screenshots/screenshots/dark/01-dashboard-d.png</image>
+      <caption>Track your total portfolio balance at a glance</caption>
+    </screenshot>
   </screenshots>
 
   <content_rating type="oars-1.1">
