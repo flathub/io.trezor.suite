@@ -88,6 +88,26 @@
 
   
 <releases>
+<release version="26.1.2" date="2026-01-22">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-january-2026</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Korean language support is now available in the Trezor Suite app, making it more accessible for a wider global audience.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>Dollar-cost averaging (DCA) has been removed from the Trading section to simplify the overall trading experience.</li>
+      <li>The Fixed/Floating rate toggle has been removed, streamlining the swap and trading flow.</li>
+      <li>The provider picker has been consolidated into a single selector, making it easier to compare and choose providers.</li>
+      <li>A new asset picker has been added to the Swap section, enabling faster and clearer selection of your target asset.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Minor bug fixes and performance improvements have been implemented for a smoother and more reliable experience.</li>
+    </ul>
+  </description>
+</release>
 <release version="25.12.2" date="2025-12-16">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-december-2025</url>
   <description>
