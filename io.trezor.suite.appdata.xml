@@ -88,6 +88,23 @@
 
   
 <releases>
+<release version="26.2.3" date="2026-02-19">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-february-2026</url>
+  <description>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>The transaction list has been redesigned to provide a clearer, more intuitive overview of your transaction history.</li>
+      <li>Trezor device wipe behavior has been unified across platforms for a more consistent and streamlined experience.</li>
+      <li>The labeling system has been enhanced, offering a more robust and user-friendly way to organize assets and transactions.</li>
+      <li>The transaction notifications have been redesigned to improve readability.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Minor bugs have been resolved alongside performance optimizations, ensuring a smoother and more reliable experience overall.</li>
+      <li>Missing translations have been added in the Trade section.</li>
+    </ul>
+  </description>
+</release>
 <release version="26.1.2" date="2026-01-22">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-january-2026</url>
   <description>
