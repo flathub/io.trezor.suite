@@ -1,9 +1,9 @@
 app-id: io.trezor.suite
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: '25.08'
 command: trezor-suite
 separate-locales: false
 rename-icon: trezor-suite
@@ -19,14 +19,7 @@ finish-args:
   - --system-talk-name=org.bluez
   - --talk-name=org.freedesktop.secrets
 modules:
-  - name: unappimage
-    buildsystem: simple
-    build-commands:
-      - make -C squashfs-tools install INSTALL_DIR=/app/bin
-    sources:
-      - type: git
-        url: https://github.com/refi64/unappimage
-        commit: d7f86f2a0d7ec3a69211125207d5f127386b849a
+  - shared-modules/squashfs-tools/squashfs-tools.json
 
   - name: trezor-suite
     buildsystem: simple
@@ -56,14 +49,21 @@ modules:
       - type: file
         path: io.trezor.suite.desktop
 
-      - type: file
-        path: apply_extra.sh
+      - type: script
+        dest-filename: apply_extra
+        commands:
+          - set -euo pipefail
+          - APP_IMAGE="/app/extra/Trezor-Suite.AppImage"
+          - "OFFSET=$(grep -abo 'hsqs' \"$APP_IMAGE\" | tail -n 1 | cut -d: -f1)"
+          - mkdir -p /app/extra/bin
+          - unsquashfs -f -o "$OFFSET" -d /app/extra/bin "$APP_IMAGE"
+          - rm "$APP_IMAGE"
 
       - type: file
         path: icons/trezor-suite.png
 
     build-commands:
-      - install -Dm755 apply_extra.sh "${FLATPAK_DEST}/bin/apply_extra"
+      - install -Dm755 apply_extra "${FLATPAK_DEST}/bin/apply_extra"
       - install -Dm755 trezor-suite "${FLATPAK_DEST}/bin/trezor-suite"
       - install -Dm644 io.trezor.suite.desktop "${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
       - install -Dm644 io.trezor.suite.appdata.xml "${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.appdata.xml"
