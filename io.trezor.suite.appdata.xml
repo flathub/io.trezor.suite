@@ -88,6 +88,15 @@
 
   
 <releases>
+<release version="26.3.4" date="2026-03-28">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-march-2026</url>
+  <description>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>26.3.4 test</li>
+    </ul>
+  </description>
+</release>
 <release version="26.3.3" date="2026-03-27">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-march-2026</url>
   <description>
