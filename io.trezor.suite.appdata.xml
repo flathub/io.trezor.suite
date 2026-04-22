@@ -88,6 +88,33 @@
 
   
 <releases>
+<release version="26.4.2" date="2026-04-22">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-april-2026</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Released Suite Sync for secure cross-device data syncing.</li>
+      <li>Trading is now globally accessible with a unified Buy/Sell/Swap interface and improved post-trade experience.</li>
+      <li>Added an OTC/Concierge trading option on desktop for large trades.</li>
+      <li>Added WalletConnect support for Stellar.</li>
+      <li>Enhanced phishing transaction protection with configurable dust detection for suspicious transactions.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>Improved trading experience with better forms, warnings, and layout updates.</li>
+      <li>Better accuracy for fees, Solana staking provider info, and Cardano transaction export.</li>
+      <li>Ongoing UI/UX refinements, including QR scanning.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Fixed Suite Sync tooltip, and possibility to enable legacy labelling.</li>
+      <li>Fixed device connectivity and reconnection issues.</li>
+      <li>Resolved multiple trading flow bugs and inconsistencies.</li>
+      <li>Addressed issues in onboarding.</li>
+      <li>General bug fixes and performance improvements.</li>
+    </ul>
+  </description>
+</release>
 <release version="26.3.3" date="2026-03-27">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-march-2026</url>
   <description>
