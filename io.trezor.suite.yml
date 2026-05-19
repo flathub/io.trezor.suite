@@ -1,9 +1,9 @@
 app-id: io.trezor.suite
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: '25.08'
 command: trezor-suite
 separate-locales: false
 rename-icon: trezor-suite
@@ -21,6 +21,8 @@ finish-args:
 modules:
   - name: unappimage
     buildsystem: simple
+    build-options:
+      cflags: -Wno-incompatible-pointer-types
     build-commands:
       - make -C squashfs-tools install INSTALL_DIR=/app/bin
     sources:
