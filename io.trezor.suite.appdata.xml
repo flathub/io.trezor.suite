@@ -88,6 +88,41 @@
 
   
 <releases>
+<release version="26.5.2" date="2026-05-27">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-may-2026</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Added a new stablecoin yield feature under the Earn tab giving users the ability to earn on their stablecoin balances.</li>
+      <li>Legacy labeling can now be migrated to Suite Sync.</li>
+      <li>WalletConnect now warns when account balances are insufficient before confirming transactions.</li>
+      <li>Trading offers can now be compared side by side.</li>
+      <li>A new DeFi Tokens section has been added for EVM accounts.</li>
+      <li>Passphrase entry now includes a Caps Lock warning.</li>
+      <li>Coin settings can now be opened directly from the dashboard.</li>
+      <li>Device authenticity verification now includes MCU MLDSA support.</li>
+      <li>ERC-681 links and QR codes are now supported in the send form.</li>
+      <li>Custom backends can now be configured without activating coins first.</li>
+      <li>Solana transactions now support Memo fields.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>A new Earn section has been added.</li>
+      <li>Address formatting has been improved across the app.</li>
+      <li>Privacy settings have been reorganized for easier access.</li>
+      <li>Desktop and mobile onboarding flows are now unified.</li>
+      <li>Asset history charts have an updated layout.</li>
+      <li>Bitcoin-only firmware wallets now show a cleaner interface.</li>
+      <li>Updated firmware version with security improvements for Trezor Safe 7, Trezor Safe 5, Trezor Safe 3, and Trezor Model T.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Fixed repeated passphrase prompts when activating additional coins with Cardano enabled.</li>
+      <li>Fixed unsupported assets appearing in the swap form.</li>
+      <li>Minor bugs and usability issues have been resolved for a smoother experience.</li>
+    </ul>
+  </description>
+</release>
 <release version="26.5.1" date="2026-05-21">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-may-2026</url>
   <description>
