@@ -88,6 +88,38 @@
 
   
 <releases>
+<release version="26.6.1" date="2026-06-17">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-june-2026</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>TRON (TRX) is now available to all users, with full account management support.</li>
+      <li>Your Trezor’s device name and color now sync automatically during THP pairing.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>The minimum ETH staking amount has been reduced to 0.01 ETH.</li>
+      <li>The UX of approval steps within the Earn stablecoin yield flow has improved.</li>
+      <li>Swap is now accessible directly from the main navigation.</li>
+      <li>Contract verification is now available across all EVM networks.</li>
+      <li>Coin activation has been redesigned with a faster, pill-style network selector.</li>
+      <li>EVM testnets now use the same derivation paths as their mainnets.</li>
+      <li>Bitcoin is now included in the phishing detection.</li>
+      <li>Currency flags are now displayed in desktop trading forms.</li>
+      <li>The wallet and device switcher is disabled during account discovery to prevent interruptions.</li>
+      <li>The Guide experience has been refined with usability improvements.</li>
+      <li>Bitcoin fee customization warnings have been streamlined for a cleaner send flow.</li>
+      <li>Updated firmware version with security improvements for Trezor Safe 7, Trezor Safe 5, Trezor Safe 3, and Trezor Model T.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Fixed a crash that could occur when retrying certain Solana swaps.</li>
+      <li>Fixed a crash when all wallets were ejected during an active trading session.</li>
+      <li>Fixed an issue preventing device wallpaper changes.</li>
+      <li>Minor bugs have been resolved, along with general usability enhancements for a more reliable and seamless experience.</li>
+    </ul>
+  </description>
+</release>
 <release version="26.5.2" date="2026-05-27">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-may-2026</url>
   <description>
