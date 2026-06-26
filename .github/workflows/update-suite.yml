@@ -1,0 +1,96 @@
+name: Update Trezor Suite
+
+# Bump Trezor Suite: refresh the Flatpak manifest + appdata changelog, open a PR.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to update to (e.g. 26.6.1). Blank = latest upstream release."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+# Don't let two runs fight over the same branch.
+concurrency:
+  group: update-suite-${{ github.event.inputs.version }}
+  cancel-in-progress: false
+
+env:
+  BASE_URL: https://data.trezor.io/suite/releases/desktop
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Detect version
+        id: detect
+        env:
+          INPUT_VERSION: ${{ github.event.inputs.version }}
+        run: |
+          set -euo pipefail
+          if [ -n "$INPUT_VERSION" ]; then
+            VERSION="$INPUT_VERSION"
+          else
+            VERSION=$(curl -fsSL "$BASE_URL/latest/latest-linux.yml" | sed -n 's/^version:[[:space:]]*//p' | head -1)
+          fi
+          [ -n "$VERSION" ] || { echo "Could not determine version" >&2; exit 1; }
+
+          # What's currently shipped, read off the x86_64 AppImage url.
+          CURRENT=$(grep -oP 'desktop/v\K[0-9]+\.[0-9]+\.[0-9]+(?=/Trezor-Suite-[^/]*x86_64\.AppImage)' io.trezor.suite.yml | head -1)
+          echo "Target: $VERSION   Current: $CURRENT"
+
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          if [ "$VERSION" = "$CURRENT" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update manifest
+        if: steps.detect.outputs.changed == 'true'
+        run: .github/scripts/update_manifest.sh "${{ steps.detect.outputs.version }}" "$BASE_URL"
+
+      - name: Update changelog
+        if: steps.detect.outputs.changed == 'true'
+        run: .github/scripts/update_changelog.sh "${{ steps.detect.outputs.version }}" "$BASE_URL"
+
+      - name: Validate output
+        if: steps.detect.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          yq -e '.' io.trezor.suite.yml > /dev/null
+          python3 -c "import xml.dom.minidom as m; m.parse('io.trezor.suite.appdata.xml')"
+          # Re-check the entry we just added for emoji (the changelog script stashed it here),
+          # using the same pattern that stripped them so old entries don't fail the run.
+          # No block means the changelog entry already existed, so there's nothing to check.
+          BLOCK="$RUNNER_TEMP/block.xml"
+          if [ -f "$BLOCK" ] && ! perl -CSD -ne 'exit 1 if /\p{Extended_Pictographic}|[\x{FE00}-\x{FE0F}\x{200D}\x{20E3}]/' "$BLOCK"; then
+            echo "Generated release block still contains emoji" >&2
+            exit 1
+          fi
+
+      - name: Create pull request
+        if: steps.detect.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
+        with:
+          branch: update-suite-${{ steps.detect.outputs.version }}
+          delete-branch: true
+          commit-message: "chore: update to Trezor Suite version ${{ steps.detect.outputs.version }}"
+          title: "chore: update to Trezor Suite version ${{ steps.detect.outputs.version }}"
+          body: |
+            Bumps Trezor Suite to **${{ steps.detect.outputs.version }}**.
+
+            - `io.trezor.suite.yml`: refreshed url / size / sha256 for x86_64 and aarch64.
+            - `io.trezor.suite.appdata.xml`: new `<release>` from upstream notes (emoji stripped).
+
+            Source: `${{ env.BASE_URL }}/v${{ steps.detect.outputs.version }}/latest-linux.yml`
