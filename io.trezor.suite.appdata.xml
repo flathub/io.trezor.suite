@@ -88,6 +88,42 @@
 
   
 <releases>
+<release version="26.7.4" date="2026-08-03">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-july-2026</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Added support for Robinhood Chain network</li>
+      <li>Tron (TRX) staking is now available directly in Trezor Suite</li>
+      <li>Users can now cancel pending EVM transactions</li>
+      <li>Option added to view and edit nonce in the EVM send form</li>
+      <li>A new preview step has been added to the Buy flow</li>
+      <li>WalletConnect button added to the account menu for quick access to connected apps</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>Account sorting updated across sidebar menu and transaction screens</li>
+      <li>Zero-balance and hidden tokens are now sorted alphabetically</li>
+      <li>Page navigation simplified in the trading section</li>
+      <li>Expanded clear signing coverage for 1inch and other trading flows</li>
+      <li>Clearer error messages now shown during Swap transaction failures</li>
+      <li>Visual fixes for the in-app user guide</li>
+      <li>Lower minimum fee rate of 0.2 sat/vB for Normal priority transactions</li>
+      <li>Improved permission handling in Trezor Connect and the Connect popup</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Fixed Stellar account discovery issues</li>
+      <li>Prevention of canceling or speeding up EVM transactions with a nonce gap</li>
+      <li>Hidden assets are excluded from token search results</li>
+      <li>Unification of Bitcoin Cash address prefix throughout Suite</li>
+      <li>Fixed incorrect network fees shown for 1inch Fusion swaps</li>
+      <li>Visual / UX improvements throughout the application</li>
+      <li>Resolved a keyboard shortcut conflict affecting account switching and dashboard navigation</li>
+      <li>Minor bugs have been resolved, along with general usability enhancements for a more reliable and seamless experience</li>
+    </ul>
+  </description>
+</release>
 <release version="26.7.3" date="2026-07-29">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-july-2026</url>
   <description>
