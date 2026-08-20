@@ -88,6 +88,37 @@
 
   
 <releases>
+<release version="26.8.2" date="2026-08-20">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-august-2026</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Added support for HyperEVM network</li>
+      <li>ETH vault added to DeFi Yield</li>
+      <li>New and improved Receive flow</li>
+      <li>BIP-321 URIs added to Send form for simpler QR payments</li>
+      <li>Activity page redesigned, now including Notifications, and Release notes tabs</li>
+      <li>Transaction detail screen now shows profit / loss and price per unit</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>Sign &amp; verify messages now display the full address</li>
+      <li>Stablecoin Yield renamed as DeFi Yield, alongside other UX improvements</li>
+      <li>Improved UX for suspicious transactions filter</li>
+      <li>Account loading behavior improved for enhanced app performance</li>
+      <li>Tor onion address used for Suite Sync connections for improved performance</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Send form recomposes transaction details when OP_RETURN Hexadecimal input field is updated</li>
+      <li>Fixed incorrect fees displayed for Layer 2 EVM transactions</li>
+      <li>Restored the transaction ID ‘Copy’ button</li>
+      <li>Fixed balance details displayed for Solana contract transactions</li>
+      <li>Network fee calculation issues resolved for Tron swaps</li>
+      <li>Minor bugs have been resolved, along with general usability enhancements for a more reliable and seamless experience</li>
+    </ul>
+  </description>
+</release>
 <release version="26.7.4" date="2026-08-03">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-july-2026</url>
   <description>
