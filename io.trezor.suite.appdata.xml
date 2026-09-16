@@ -88,6 +88,34 @@
 
   
 <releases>
+<release version="26.9.2" date="2026-09-16">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-september-2026</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Sign &amp; Verify has a revamped UI with dedicated copy buttons for message, address, and signature.</li>
+      <li>Exchange swaps now show a transaction simulation on the confirm page</li>
+      <li>Blockaid transaction simulation extended to Solana, Tron, and Stellar networks (previously EVM-only)</li>
+      <li>Chinese (Simplified) and Indonesian are now official languages in Suite, moved up from community translations</li>
+      <li>MEV protection is now enabled for Robinhood transactions</li>
+      <li>Suite now supports the root Solana derivation path (`m/44'/501'`), making it easier to migrate accounts from other wallets</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>Add Account flow improved with a unified, searchable Network list</li>
+      <li>Optimized rendering for improved app performance</li>
+      <li>Search icon added to currency, country, and state search fields (for Buy / Sell / Swap)</li>
+      <li>WalletConnect has improved UI for account selection</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Transactions flagged as phishing are hidden from the Activity Center notifications</li>
+      <li>Excessive network requests fixed for wallets with a large number of Solana accounts</li>
+      <li>Cardano native tokens now show up in a transaction's Inputs/Outputs section, instead of only ADA</li>
+      <li>Minor bugs have been resolved, along with general usability enhancements for a more reliable and seamless experience</li>
+    </ul>
+  </description>
+</release>
 <release version="26.8.2" date="2026-08-20">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-august-2026</url>
   <description>
