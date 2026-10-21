@@ -35,16 +35,16 @@ modules:
     sources:
       - type: extra-data
         only-arches: [x86_64]
-        url: https://data.trezor.io/suite/releases/desktop/v26.9.3/Trezor-Suite-26.9.3-linux-x86_64.AppImage
-        size: 191380699
-        sha256: e2107dc719b37b63366e7bd369e5d0924ff372d452d276e4f8e8ad0316192ef7
+        url: https://data.trezor.io/suite/releases/desktop/v26.10.2/Trezor-Suite-26.10.2-linux-x86_64.AppImage
+        size: 193646451
+        sha256: fc52c843287e0a4f3fe3cf77c2b1d07d12b9c6e3f5d94c7df2bd61da7701eca6
         filename: Trezor-Suite.AppImage
 
       - type: extra-data
         only-arches: [aarch64]
-        url: https://data.trezor.io/suite/releases/desktop/v26.9.3/Trezor-Suite-26.9.3-linux-arm64.AppImage
-        size: 190807652
-        sha256: 21688a33240b97fbf95d1fc8d7280a6377574e3806c110ba8816c3228fdb03a0
+        url: https://data.trezor.io/suite/releases/desktop/v26.10.2/Trezor-Suite-26.10.2-linux-arm64.AppImage
+        size: 193069100
+        sha256: 2f2b147e4cd0a806f7b69bf8fd0e188d39376f03352acc3ea47e9f5522d442f8
         filename: Trezor-Suite.AppImage
 
       - type: script
