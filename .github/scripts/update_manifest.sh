@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Point the Flatpak manifest at a new Trezor Suite release: download each AppImage,
-# then rewrite its url / size / sha256 in the manifest.
+# verify its signature, then rewrite its url / size / sha256 in the manifest.
 #
 # Usage: update_manifest.sh <version> <base-url>
 set -euo pipefail
@@ -13,6 +13,9 @@ RELEASE_URL="$BASE_URL/v$VERSION"
 work="$(mktemp -d)"
 trap 'rm -rf "$work"' EXIT
 
+# Only trust the release key committed in this repository.
+gpg --batch --dearmor --output "$work/release-key.gpg" .github/satoshilabs-2021-signing-key.asc
+
 # Point the manifest's extra-data block for one arch at a freshly downloaded AppImage.
 # $arch is the manifest's only-arches value (x86_64 / aarch64); $file is the AppImage name.
 update_arch() {
@@ -21,6 +24,9 @@ update_arch() {
 
   echo "Downloading $url"
   curl -fL -o "$work/$file" "$url"
+  curl -fL -o "$work/$file.asc" "$url.asc"
+  gpgv --homedir "$work" --keyring "$work/release-key.gpg" "$work/$file.asc" "$work/$file"
+
   local size sha
   size="$(stat -c%s "$work/$file")"
   sha="$(sha256sum "$work/$file" | awk '{print $1}')"
