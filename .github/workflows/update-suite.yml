@@ -43,7 +43,10 @@ jobs:
           else
             VERSION=$(curl -fsSL "$BASE_URL/latest/latest-linux.yml" | sed -n 's/^version:[[:space:]]*//p' | head -1)
           fi
-          [ -n "$VERSION" ] || { echo "Could not determine version" >&2; exit 1; }
+          [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || {
+            echo "Invalid release version" >&2
+            exit 1
+          }
 
           # What's currently shipped, read off the x86_64 AppImage url.
           CURRENT=$(grep -oP 'desktop/v\K[0-9]+\.[0-9]+\.[0-9]+(?=/Trezor-Suite-[^/]*x86_64\.AppImage)' io.trezor.suite.yml | head -1)
@@ -58,11 +61,15 @@ jobs:
 
       - name: Update manifest
         if: steps.detect.outputs.changed == 'true'
-        run: .github/scripts/update_manifest.sh "${{ steps.detect.outputs.version }}" "$BASE_URL"
+        env:
+          VERSION: ${{ steps.detect.outputs.version }}
+        run: .github/scripts/update_manifest.sh "$VERSION" "$BASE_URL"
 
       - name: Update changelog
         if: steps.detect.outputs.changed == 'true'
-        run: .github/scripts/update_changelog.sh "${{ steps.detect.outputs.version }}" "$BASE_URL"
+        env:
+          VERSION: ${{ steps.detect.outputs.version }}
+        run: .github/scripts/update_changelog.sh "$VERSION" "$BASE_URL"
 
       - name: Validate output
         if: steps.detect.outputs.changed == 'true'
