@@ -26,8 +26,8 @@
   <launchable type="desktop-id">io.trezor.suite.desktop</launchable>
 
   <branding>
-    <color type="primary" scheme_preference="light">#072C17</color>
-    <color type="primary" scheme_preference="dark">#B8F4D1</color>
+    <color type="primary" scheme_preference="light">#B8F4D1</color>
+    <color type="primary" scheme_preference="dark">#072C17</color>
   </branding>
   
   <screenshots>
