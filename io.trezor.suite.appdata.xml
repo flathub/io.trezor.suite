@@ -88,6 +88,38 @@
 
   
 <releases>
+<release version="26.10.3" date="2026-10-29">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-october-2026</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Passphrases can now be up to 128 characters long</li>
+      <li>Arc EVM network now supported in Suite</li>
+      <li>Trade form can be used with sats as the BTC unit</li>
+      <li>Trade history can be exported in CSV format, including trade ID, date, type, amounts, networks, provider, status, and transaction IDs</li>
+      <li>You can now swap Bitcoin to EVM chains (Ethereum, Avalanche, BNB Smart Chain) through LI.FI in Suite’s trading flow</li>
+      <li>You can now sign Tron resource (un)delegation transactions (Bandwidth and Energy) on your Trezor through WalletConnect, in dApps such as TronScan</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>Trade form has a refreshed layout and improved performance</li>
+      <li>Improved support for Soroban-based (SEP-41) tokens: you can receive them, see their transactions, attach a memo, and track custom tokens</li>
+      <li>Improved custom Electrum server setup in Trezor Suite</li>
+      <li>Receive flow now starts with an asset search, rather than an account list</li>
+      <li>Yield deposits have a dynamic minimum fee reserve instead of a fixed one</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Suite Sync label export behavior fixed</li>
+      <li>Startup issues fixed</li>
+      <li>Stellar USDC added to Inactive tokens list by default, and can be activated during trading</li>
+      <li>Fixed Solana reconnect issue when using many accounts</li>
+      <li>Fiat rate tickers fixed for when rates are filtered out</li>
+      <li>Solana staking instructions unified between device and app</li>
+      <li>Minor bugs have been resolved, along with general usability enhancements for a more reliable and seamless experience</li>
+    </ul>
+  </description>
+</release>
 <release version="26.10.2" date="2026-10-21">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-october-2026</url>
   <description>
