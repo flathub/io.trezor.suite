@@ -88,6 +88,39 @@
 
   
 <releases>
+<release version="26.11.2" date="2026-11-19">
+  <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-november-2026</url>
+  <description>
+    <p><em>New features</em></p>
+    <ul>
+      <li>Suite now warns you before you send funds to an address you’ve never transacted with, helping you catch addresses copied from phishing transactions.</li>
+      <li>You can now sign Solana v1 format transactions with your Trezor (running firmware 2.13.1 or later).</li>
+      <li>The asset screen now charts the asset’s price history, with a range picker from 1D to All.</li>
+      <li>The asset screen now has an activity feed showing recent transactions for that asset across every account that holds it.</li>
+      <li>Selecting an asset on desktop now opens a new asset screen showing its total balance and fiat value, which network it’s on, and a per-account breakdown.</li>
+      <li>The asset table now has a “Show small balances” switch to hide holdings under $1 without changing your portfolio total.</li>
+      <li>Home’s asset table now lists one row per asset per network, with tokens as their own rows. Each row shows the price with 7-day change and your balance, and there’s an option to group by network.</li>
+      <li>You can now switch the “You pay” and “You get” input fields in the Swap form with a single click. Suite switches the accounts too.</li>
+      <li>New “Earning balance” component added to the top of the Earn dashboard.</li>
+      <li>Home now shows your NFTs grouped by collection in a new section below your assets.</li>
+    </ul>
+    <p><em>Improvements</em></p>
+    <ul>
+      <li>Added security checks during device setup to help verify packaging and confirm it hasn't been tampered with.</li>
+      <li>TRX staking transaction history added to the staking detail screen.</li>
+      <li>Earn signing flow improvements on Model One, with the contract address now shown in the first step.</li>
+      <li>Tron unstaking counter is now dynamic, instead of showing an approximate fixed value.</li>
+      <li>Cardano DRep IDs in the legacy format are now converted automatically to the newer CIP-129 format.</li>
+      <li>Zcash transactions now use the standard ZIP 317 fee formula.</li>
+    </ul>
+    <p><em>Bug fixes</em></p>
+    <ul>
+      <li>Stellar transaction signing supports smart contract creation and delegated authorization.</li>
+      <li>Signing EIP-712 messages (for example, logging in to OpenSea) with an empty account no longer shows a “minimum balance” warning, since signing a message costs nothing.</li>
+      <li>Minor bugs have been resolved, along with general usability enhancements for a more reliable and seamless experience.</li>
+    </ul>
+  </description>
+</release>
 <release version="26.10.3" date="2026-10-29">
   <url type="details">https://trezor.io/other/product-updates/trezor-suite-updates/trezor-suite-update-october-2026</url>
   <description>
