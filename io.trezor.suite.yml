@@ -19,16 +19,16 @@ finish-args:
   - --system-talk-name=org.bluez
   - --talk-name=org.freedesktop.secrets
 modules:
-  - name: unappimage
+  - name: squashfs-tools
     buildsystem: simple
-    build-options:
-      cflags: -Wno-incompatible-pointer-types
     build-commands:
-      - make -C squashfs-tools install INSTALL_DIR=/app/bin ZSTD_SUPPORT=1
+      - make -C squashfs-tools -j ${FLATPAK_BUILDER_N_JOBS} ZSTD_SUPPORT=1 unsquashfs
+      - install -Dm755 squashfs-tools/unsquashfs ${FLATPAK_DEST}/bin/unsquashfs
     sources:
       - type: git
-        url: https://github.com/refi64/unappimage
-        commit: d7f86f2a0d7ec3a69211125207d5f127386b849a
+        url: https://github.com/plougher/squashfs-tools.git
+        tag: 4.7.5
+        commit: 708c59ae80853b0845017c33b42e56061cc546cd
 
   - name: trezor-suite
     buildsystem: simple
@@ -58,14 +58,27 @@ modules:
       - type: file
         path: io.trezor.suite.desktop
 
-      - type: file
-        path: apply_extra.sh
+      - type: script
+        dest-filename: apply_extra
+        commands:
+          - |
+            set -e
+            image=Trezor-Suite.AppImage
+            for offset in $(LC_ALL=C grep -aob 'hsqs' "$image" | cut -d: -f1); do
+              if unsquashfs -s -o "$offset" "$image" >/dev/null 2>&1; then
+                unsquashfs -o "$offset" -d bin "$image"
+                rm "$image"
+                exit 0
+              fi
+            done
+            echo "No SquashFS filesystem found in $image" >&2
+            exit 1
 
       - type: file
         path: icons/trezor-suite.png
 
     build-commands:
-      - install -Dm755 apply_extra.sh "${FLATPAK_DEST}/bin/apply_extra"
+      - install -Dm755 apply_extra "${FLATPAK_DEST}/bin/apply_extra"
       - install -Dm755 trezor-suite "${FLATPAK_DEST}/bin/trezor-suite"
       - install -Dm644 io.trezor.suite.desktop "${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
       - install -Dm644 io.trezor.suite.appdata.xml "${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.appdata.xml"
