@@ -24,7 +24,7 @@ modules:
     build-options:
       cflags: -Wno-incompatible-pointer-types
     build-commands:
-      - make -C squashfs-tools install INSTALL_DIR=/app/bin
+      - make -C squashfs-tools install INSTALL_DIR=/app/bin ZSTD_SUPPORT=1
     sources:
       - type: git
         url: https://github.com/refi64/unappimage
